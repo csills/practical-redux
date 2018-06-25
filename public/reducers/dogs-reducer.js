@@ -1,5 +1,5 @@
 let dogsDefaultState = {
-	dog: "https://images.dog.ceo/breeds/deerhound-scottish/n02092002_15112.jpg",
+	dog: "./img/NEKO_polo.jpg",
     isLoading: false,
     error: null
 }

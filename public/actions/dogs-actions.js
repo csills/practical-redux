@@ -8,7 +8,7 @@ let generateDoggo = () => {
 		method: "GET",
 		url: "https://dog.ceo/api/breeds/image/random"
 	}).then( (dog) => {
-		// Asynchronously dispatch another action when the movies come back from the API
+		// Asynchronously dispatch another action when the dogs come back from the API
 		if (dog.Error) {
 			store.dispatch({
 				type: "DOG_ERROR",

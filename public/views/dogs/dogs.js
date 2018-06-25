@@ -2,21 +2,22 @@ const renderDogsApp = () => {
 	let { dogs } = store.getState();
 	let { isLoading, dog, error } = dogs;
 	return `
-		</br>
-		</br>
-		</br>
-		<button onclick="generateDoggo()">Generate Doggo</button>
-		</br>
-		</br>
-		</br>
-		${isLoading 
-			? `<h1> LOADING... </h1>`
-			: error
-				? `<h1>${error}</h1>`
-				: `<div>
-					<img src=${dog} /><br>
-					</div>`
-		}
+		<div>
+			</br>
+			</br>
+			</br>
+			<h1>GENERATE DOGGO</h1>
+			<button onclick="generateDoggo()">Find Me a Dog...go</button>
+			</br>
+			<hr/>
+			</br>
+			${isLoading 
+				? `<h1> LOADING... </h1>`
+				: error
+					? `<h1>${error}</h1>`
+					: `<img src=${dog} style="width:400px;height:600px;" />`
+			}
+		</div>
 	`
 }
 
