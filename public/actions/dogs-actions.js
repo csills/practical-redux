@@ -16,7 +16,7 @@ let generateDoggo = () => {
 			});
 		} else {
 			store.dispatch({
-				type: "DOG_RETURNED",
+				type: "DOG_SEARCH_RETURNED",
 				dog: dog.message
 			});
 		}	

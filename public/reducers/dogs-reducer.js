@@ -13,7 +13,7 @@ const dogsReducer = (state = dogsDefaultState, action) => {
         stateCopy.isLoading = true;
         stateCopy.error = null;
         return stateCopy;
-    } else if (action.type == "DOG_RETURNED") {
+    } else if (action.type == "DOG_SEARCH_RETURNED") {
         let { dog } = action;
         stateCopy.dog = dog
         stateCopy.isLoading = false;
