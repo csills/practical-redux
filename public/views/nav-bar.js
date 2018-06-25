@@ -1,12 +1,6 @@
 const renderNavBar = () => {
 	let { navigation } = store.getState();
 
-	let navigateTo = (destination) => {
-		store.dispatch({
-			type: "NAV_CLICKED",
-			destination: destination
-		});
-	}
 	return `
 		<div>
 			<span 
